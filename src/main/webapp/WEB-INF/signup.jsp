@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Cadastro</title>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+* {box-sizing: border-box;} * {background-color:lightblue;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -56,6 +56,19 @@ button:hover {
 /* Add padding to container elements */
 .container {
   padding: 16px;
+}
+
+ .title-container {
+            border-radius: 15px;
+            padding: 15px;
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+        
+ .title-container *:not(button):not(input) {
+  background-color: white;
 }
 
 /* The Modal (background) */
@@ -119,29 +132,29 @@ hr {
 </head>
 <body>
 <form action="addUser" style="border:1px solid #ccc" method="post">
-  <div class="container">
-    <h1>Sign Up</h1>
-    <p>Please fill in this form to create an account.</p>
+  <div class="title-container ">
+    <h1>Cadastro</h1>
+    <p>Por favor preencha este formulario para criar uma conta.</p>
     <hr>
 
-    <label for="fname"><b>First Name</b></label>
-    <input type="text" placeholder="Enter First Name" name="user_fname" required>
+    <label for="fname"><b>Primeiro Nome</b></label>
+    <input type="text" placeholder="Insira seu Primeiro Nome" name="user_fname" required>
     
-    <label for="lname"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Last Name" name="user_lname" required>
+    <label for="lname"><b>Ultimo Nome</b></label>
+    <input type="text" placeholder="Insira seu Ultimo Nome" name="user_lname" required>
     
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="user_email" required>
+    <input type="text" placeholder="Insira seu Email" name="user_email" required>
 
-    <label for="pass"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="user_pass" required>
+    <label for="pass"><b>Senha</b></label>
+    <input type="password" placeholder="Insira uma Senha" name="user_pass" required>
 
-    <label for="mobile"><b>Mobile</b></label>
-    <input type="text" placeholder="Enter Mobile" name="user_mobile" required>
+    <label for="mobile"><b>Numero de Telefone</b></label>
+    <input type="text" placeholder="Insira seu Telefone" name="user_mobile" required>
     
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+      <button type="button" class="cancelbtn">Cancelar</button>
+      <button type="submit" class="signupbtn">Cadastrar</button>
     </div>
   </div>
 </form>
